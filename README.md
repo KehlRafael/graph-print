@@ -16,9 +16,12 @@
  v3s1 v3s2
  ```
  
- Where `pXsY` is the probability that the vertex player `X` uses strategy `Y`.
+ Where `vXsY` is the probability that the vertex player `X` uses strategy `Y`.
  
  `adjacency_matrix` has each entry separated by a space and each row is a new line.
+ 
+ 
+ To use the `madeomocenniPrint` script you must first run the `simulations_madeo_mocenni` example from my [hyper-rational-games](https://github.com/KehlRafael/hyper-rational-games) project, which will generate all needed input files for that script. `madeomocenniPrint` will then plot all graphs and save them as `png` on the script folder.
  
  ## Examples
  On folder [Examples](Examples) theres 3 examples of input files and their respective output images.
