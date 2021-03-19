@@ -14,7 +14,7 @@ A = np.loadtxt(arqM)
 G = nx.from_numpy_matrix(A)
 
 # Load populations to generate the graphic
-values = [X[i,1] for i in range(X.shape[0])]
+values = [X[i,0] for i in range(X.shape[0])]
 
 # Generate graph
 nx.draw(G, cmap=plt.get_cmap('autumn'), node_color=values, with_labels=True, font_color='black',vmin=0,vmax=1)
@@ -26,5 +26,3 @@ plt.colorbar(sm,shrink=0.94)
 
 # Plot image
 plt.show()
-
-
